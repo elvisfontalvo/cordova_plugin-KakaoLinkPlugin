@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.gnustory.kakaolink" version="0.0.1">
+    <name>KakaoLinkPlugin</name>
+    <description>kakao link plugin</description>
+    <license>adnstyle</license>
+    <keywords>cordova,KakaoLinkPlugin</keywords>
+    <js-module src="www/js/KakaoLinkPlugin.js" name="KakaoLinkPlugin">
+        <clobbers target="KakaoLinkPlugin" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KakaoLinkPlugin">
+                <param name="ios-package" value="KakaoLinkPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="platforms/ios/KakaoLinkPlugin/Plugins/KakaoLinkPlugin.h" />
+        <source-file src="platforms/ios/KakaoLinkPlugin/Plugins/KakaoLinkPlugin.m" />
+        <framework src="QuartzCore.framework" />
+        <framework src="platforms/ios/KakaoOpenSDK.framework" custom="true" />
+    </platform>
+</plugin>
