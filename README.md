@@ -5,6 +5,6 @@
     KakaoLinkPlugin.call("kakaotalk share...");
 
 <h3>iOS setting</h3>
-1. cordova plugin add.
-<br/>
-cordova plugin add https://github.com/gnustory/cordova_plugin-KakaoLinkPlugin.git;
+    1. cordova plugin add.
+    <br/>
+    cordova plugin add https://github.com/gnustory/cordova_plugin-KakaoLinkPlugin.git;
