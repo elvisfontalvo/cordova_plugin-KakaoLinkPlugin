@@ -1,10 +1,43 @@
-<h1>cordova_plugin-KakaoLinkPlugin</h1>
-<br/>
-<h2>Text type</h2>
-<h3>Usage</h3>
-    KakaoLinkPlugin.call("kakaotalk share...");
+cordova_plugin-KakaoLinkPlugin
+==============
 
-<h3>iOS setting</h3>
-    1. cordova plugin add.
-    <br/>
-    cordova plugin add https://github.com/gnustory/cordova_plugin-KakaoLinkPlugin.git;
+##Text type
+
+        
+###*Usage*
+        KakaoLinkPlugin.call("kakaotalk share...");
+
+
+##Api import
+
+###*common* 
+Create kakao App [Kakao Developers](https://developers.kakao.com/apps).
+
+
+###*iOS setting*
+        1. cordova plugin add.
+        
+            cordova plugin add https://github.com/gnustory/cordova_plugin-KakaoLinkPlugin.git;
+        
+        
+        2. xcode run
+        
+        
+        3. Project > Info > URL Types > URL Schemes
+        
+            'kakao' + app key... ex) kakaoe8aa9b80eb803ab5ca55a22b2d0ff46b
+        
+        
+        4. Folder > Resources > *.plist
+        
+            key : KAKAO_APP_KEY
+            type : String
+            value : your key... ex) e8aa9b80eb803ab5ca55a22b2d0ff46b
+        
+        
+        5. Build Settings > Linking > Other Linker Flags > add
+        
+            -all_load
+        
+###*Android setting*
+        1. cordova plugin add.
