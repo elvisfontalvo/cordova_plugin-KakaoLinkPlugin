@@ -23,6 +23,7 @@ Create kakao App [Kakao Developers](https://developers.kakao.com/apps).
         
         cordova -d plugin add https://github.com/gnustory/cordova_plugin-KakaoLinkPlugin.git --variable APP_KEY="e8aa9b80eb803ab5ca55a22b2d0ff46b";
         
+        open platforms/ios/*.xcodeproj
             Build Settings > Linking > Other Linker Flags > add '-all_load'
         
         cordova build ios
