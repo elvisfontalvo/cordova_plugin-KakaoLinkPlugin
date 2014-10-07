@@ -26,6 +26,7 @@
 		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		57008F2119DCDEA40049F4DC /* KakaoLinkPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 57008F2019DCDEA40049F4DC /* KakaoLinkPlugin.m */; };
 		57C536AA19AD96CC004B1419 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C536A919AD96CC004B1419 /* QuartzCore.framework */; };
 		57C536AC19AD96D6004B1419 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C536AB19AD96D6004B1419 /* KakaoOpenSDK.framework */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
@@ -87,6 +88,8 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KakaoLinkPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoLinkPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		57008F1F19DCDEA40049F4DC /* KakaoLinkPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakaoLinkPlugin.h; sourceTree = "<group>"; };
+		57008F2019DCDEA40049F4DC /* KakaoLinkPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakaoLinkPlugin.m; sourceTree = "<group>"; };
 		57C536A919AD96CC004B1419 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		57C536AB19AD96D6004B1419 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -231,6 +234,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				57008F1F19DCDEA40049F4DC /* KakaoLinkPlugin.h */,
+				57008F2019DCDEA40049F4DC /* KakaoLinkPlugin.m */,
 			);
 			name = Plugins;
 			path = KakaoLinkPlugin/Plugins;
@@ -422,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57008F2119DCDEA40049F4DC /* KakaoLinkPlugin.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
